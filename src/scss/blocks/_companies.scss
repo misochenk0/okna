@@ -1,0 +1,22 @@
+.companies {
+    margin: 0 60px;
+    &__wrapper {
+        display: flex;
+        margin-top: 72px;
+        overflow: hidden;
+    }
+    position: relative;
+    &-img {
+        flex-shrink: 0;
+        margin-right: 76px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .slider__btn.right {
+        right: -40px;
+    }
+    .slider__btn.left {
+        left: -40px;
+    }
+}

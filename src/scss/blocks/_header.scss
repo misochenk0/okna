@@ -1,0 +1,120 @@
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        transition: .5s all;
+        svg {
+            transition: .5s all;
+        }
+        &:hover {
+            svg {
+                filter: grayscale(50%) blur(0);
+                
+
+            }
+        }
+    }
+    &__main {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        li {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 100%;
+                text-decoration: none;
+                color: #000;
+                @include hoverLink;
+            }
+        }
+    }
+    &__nav {
+        // width: 1000px;
+    }
+    &__sub {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin-top: 13px;
+        padding-top: 14px;
+        border-top: 1px solid #000;
+        li {
+            padding: 0 10px;
+            width: 170px;
+            text-align: center;
+            border-right: 1px solid #000;
+            &:last-child {
+                border-right: none;
+            }
+            a {
+                font-size: 22px;
+                text-decoration: none;
+                line-height: 100%;
+                color: #000;
+                transition: .5s all;
+                position: relative;
+                &:hover{
+                    color: $main-color;
+                    text-decoration: underline;
+                }
+               
+            }
+        }
+    }
+    &__contacts {
+        width: 255px;
+        
+    }
+    &__time {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    &__phone {
+        display: inline-block; 
+        margin-top: 2px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #000;
+        @include hoverLink;
+    }
+    
+}
+
+header {
+    border-bottom: 2px solid #000;
+    padding: 10px 20px;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    padding: 20px 14px 15px;
+    font-weight: bold;
+    margin-top: 13px;
+    font-size: 22px;
+    line-height: 63.5%;
+    color: $main-color;
+    text-decoration: none;
+    border: 3px solid #004C9E;
+    transition: .5s all;
+    &:hover {
+        background-color: $main-color;
+        color: #fff;
+    }
+    &_black {
+        color: #000;
+        border: 3px solid #000;
+    }
+}

@@ -1,0 +1,50 @@
+.faq {
+    margin-top: 95px;
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 53px;
+        color: #004C9E;
+    }
+    &__text {
+        margin-top: 39px;
+        font-size: 24px;
+        line-height: 30px;
+        display: none;
+    }
+    &-item {
+        margin-top: 47px;
+        background: #E5E5E5;
+        padding: 35px 33px 35px 70px;
+        label {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 38px;
+            color: #000000;
+            cursor: pointer;
+            position: relative;
+            svg  {
+                position: absolute;
+                left: -40px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        input {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+        input:checked {
+            & + label {
+                svg {
+                    transform: translateY(-50%) rotate(90deg);
+                }
+            }
+            & + label + .faq__text {
+                display: block;
+            }
+        }
+    }
+}

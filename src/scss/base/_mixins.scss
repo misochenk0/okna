@@ -1,0 +1,20 @@
+@mixin hoverLink {
+    transition: .5s all;
+    position: relative;
+    &:hover{
+        color: $main-color;
+        &:before {
+            width: 100%;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0%;
+        transition: .5s all;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $main-color;
+    }
+}

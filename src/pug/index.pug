@@ -1,0 +1,186 @@
+include assets/header.pug
+
+section.slider
+    .container
+        .slider__wrapper 
+            .slider__slides.flex.flex_nowrap
+                .slider__slide 
+                    .slider__block 
+                        .slider__title <span>30%</span> скидка на изделия из аллюминия и дерева 
+                        a(href="#").btn.slider__link.order__call.order__call ЗАКАЗАТЬ ЗВОНОК
+                    picture 
+                        img(src="./img/slider/slide.jpg", alt="slider_img")
+                   
+                .slider__slide 
+                    .slider__block 
+                        .slider__title <span>30%</span> скидка на изделия из аллюминия и дерева 
+                        a(href="#").btn.slider__link.order__call.order__call ЗАКАЗАТЬ ЗВОНОК
+                    picture 
+                        img(src="./img/slider/slide.jpg", alt="slider_img")
+                   
+                .slider__slide 
+                    .slider__block 
+                        .slider__title <span>30%</span> скидка на изделия из аллюминия и дерева 
+                        a(href="#").btn.slider__link.order__call.order__call ЗАКАЗАТЬ ЗВОНОК
+                    picture 
+                        img(src="./img/slider/slide.jpg", alt="slider_img")
+                   
+            .slider__btns 
+                .slider__btn.left
+                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.111 3.41421C17.8921 2.63316 17.8921 1.36683 17.111 0.585786C16.33 -0.195262 15.0636 -0.195262 14.2826 0.585786L1.48258 13.3858L0.0683625 14.8L1.48258 16.2142L14.2826 29.0142C15.0636 29.7953 16.33 29.7953 17.111 29.0142C17.8921 28.2332 17.8921 26.9668 17.111 26.1858L5.72522 14.8L17.111 3.41421Z" fill="black" fill-opacity="0.5"/>
+                    </svg>
+                div
+                .slider__btn.right
+                    <svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.888752 3.41421C0.107704 2.63316 0.107704 1.36683 0.888752 0.585786C1.6698 -0.195262 2.93613 -0.195262 3.71718 0.585786L16.5172 13.3858L17.9314 14.8L16.5172 16.2142L3.71718 29.0142C2.93613 29.7953 1.6698 29.7953 0.888752 29.0142C0.107704 28.2332 0.107704 26.9668 0.888752 26.1858L12.2745 14.8L0.888752 3.41421Z" fill="black" fill-opacity="0.5"/>
+                    </svg>
+            .dots     
+section.products
+    .container 
+        .title НАША ПРОДУКЦИЯ
+        .products__tabs 
+            input(type="radio" name="tab-selector" checked).hidden-check#p-windows
+            label(for="p-windows").tab.pl-o Пластиковые окна  
+            input(type="radio" name="tab-selector").hidden-check#p-doors
+            label(for="p-doors").tab.pl-d Пластиковые двери
+            input(type="radio" name="tab-selector").hidden-check#balcony
+            label(for="balcony").tab.balc Балконные рамы
+            input(type="radio" name="tab-selector").hidden-check#systems
+            label(for="systems").tab.syst Раздвижные системы
+            input(type="radio" name="tab-selector").hidden-check#a-windows
+            label(for="a-windows").tab.al-o Алюминевые окна
+            .products-wrap
+                .p-windows
+                    .products__wrapper 
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                    a(href="windows.html").btn ПОСМОТРЕТЬ БОЛЬШЕ 
+                .p-doors
+                    .products__wrapper 
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                    a(href="windows.html").btn ПОСМОТРЕТЬ БОЛЬШЕ 
+                .balcony
+                    .products__wrapper 
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                    a(href="windows.html").btn ПОСМОТРЕТЬ БОЛЬШЕ 
+                .systems
+                    .products__wrapper 
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                    a(href="windows.html").btn ПОСМОТРЕТЬ БОЛЬШЕ 
+                .a-windows
+                    .products__wrapper 
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                        .item 
+                            .item__img 
+                                img(src="./img/product/photo.jpg", alt="photo")
+                            .item__title Окно пластиковое 1 
+                            .item__price от 240 USD
+                            button.item__btn.btn.order__call ЗАКАЗАТЬ ЗВОНОК
+                    a(href="windows.html").btn ПОСМОТРЕТЬ БОЛЬШЕ 
+
+include assets/review.pug
+include assets/call.pug
+include assets/footer.pug

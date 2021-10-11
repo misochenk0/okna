@@ -1,0 +1,16 @@
+.error {
+    background: #EAEAEA;
+    padding: 114px 0 82px;
+    text-align: center;
+    &__title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 80px;
+        color: #004C9E;
+    }
+    &__text {
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

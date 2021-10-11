@@ -1,0 +1,90 @@
+.footer{
+    padding: 69px 0 33px;
+    &__wrapper {
+        display: flex;
+    }
+    &__social {
+        margin-left: 34px;
+    }
+    &__nav {
+        margin-left: 56px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: right;
+            margin: 0;
+            li a {
+                color: black;
+                text-decoration: none;
+                transition: .5s all;
+                line-height: 190%;
+                font-size: 20px;
+                &:hover {
+                    color: $main-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 140%;
+    }
+    &__links {
+        margin-top: 18px;
+        a {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            svg path {
+                transition: .5s all;
+            }
+            &:hover {
+                svg path {
+                    fill: $main-color;
+                }
+            }
+        }
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 140%;
+        span {
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: .5s all;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__subtitle {
+        font-size: 20px;
+        line-height: 140%;
+        font-weight: 700;
+    }
+    &__bottom {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 9px;
+        position: relative;
+        &:before {
+            content: '';
+            width: 60%;
+            height: 2px;
+            top: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $main-color;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.overflow {
+    background: rgba($color: #000000, $alpha: .4);
+    position: fixed;
+    top: 0;
+    transition: .5s all;
+    overflow: hidden;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 100%;
+    z-index: 50;
+    &_active {
+        overflow: visible;
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+.popup {
+    width: 390px;
+    padding: 24px 49px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background: #fff;
+    &__close {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        border-radius: 100%;
+        height: 31px;
+        width: 31px;
+        border: 2px solid #FA0000;
+        background: transparent;
+        color: #FA0000;
+        cursor: pointer;
+        font-family: sans-serif;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #FA0000;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%, -50%) rotate(45deg);
+        }
+        &:after {
+            transform: translate(50%, -50%) rotate(-45deg);
+
+        }
+    }
+    input, textarea {
+        resize: none;
+        display: block;
+        border: 1px solid #000000;
+        height: 48px;
+        width: 100%;
+    }
+    &-input {
+        position: relative;
+        margin-top: 35px;
+        label {
+            position: absolute;
+            background: #fff;
+            padding: 0 5px;
+            top: -10px;
+            left: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #004C9E;
+    }
+    textarea {
+        height: 150px;
+    }
+}

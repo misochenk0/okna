@@ -1,0 +1,31 @@
+@import './libs/normalize';
+
+@import './base/variables';
+@import './base/mixins';
+
+* {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+@import './blocks/header';
+@import './blocks/slider';
+@import './blocks/footer';
+@import './blocks/call';
+@import './blocks/review';
+@import './blocks/products';
+@import './blocks/page';
+@import './blocks/about';
+@import './blocks/map';
+@import './blocks/companies';
+@import './blocks/error';
+@import './blocks/categories';
+@import './blocks/faq';
+@import './blocks/profile';
+@import './blocks/text';
+@import './blocks/special-head';
+@import './blocks/popup';

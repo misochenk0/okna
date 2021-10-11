@@ -1,0 +1,21 @@
+.text-block {
+    margin-top: 80px;
+    &__text {
+        display: flex;
+    }
+    p {
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+    }
+    &_sp {
+        display: flex;
+        justify-content: space-between;
+        .p-left {
+            align-self: flex-start;
+        }
+        .p-right {
+            align-self: flex-end;
+        }
+    }
+}
