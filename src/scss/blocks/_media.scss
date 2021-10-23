@@ -122,6 +122,7 @@
         border: none;
         span {
             width: 100%;
+            flex-shrink: 0;
             height: 3px;
             border-radius: 3px;
             background: #000;
@@ -550,6 +551,7 @@
         }
     }
     .popup {
+        box-sizing: border-box;
         padding: 20px;
         .btn {
             box-sizing: border-box;
