@@ -1027,6 +1027,41 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/js/assets/mobileMenu.js":
+/*!*************************************!*\
+  !*** ./src/js/assets/mobileMenu.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var mobileMenu = function mobileMenu() {
+  var hamburger = document.querySelector('.hamburger');
+
+  if (hamburger) {
+    var _mobileMenu = document.querySelector('.header__nav');
+
+    hamburger.addEventListener('click', function () {
+      _mobileMenu.classList.add('header__nav_active');
+
+      document.body.style.overflow = 'hidden';
+    });
+
+    var closeBtn = _mobileMenu.querySelector('.header-close');
+
+    closeBtn.addEventListener('click', function () {
+      _mobileMenu.classList.remove('header__nav_active');
+
+      document.body.style.overflow = 'visible';
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (mobileMenu);
+
+/***/ }),
+
 /***/ "./src/js/assets/popup.js":
 /*!********************************!*\
   !*** ./src/js/assets/popup.js ***!
@@ -1220,9 +1255,9 @@ var pureSlider = function pureSlider(slidesTag, type, style, items, noTouch, hei
             } else {
               slider.parentElement.querySelector('.reviews-dots__dot').classList.add('active');
             }
-          };
+          }; // createMultipleDots()
 
-          createMultipleDots();
+
           window.addEventListener('resize', function () {
             var dots = slider.parentElement.querySelectorAll('.dot');
             var reviewDots = slider.parentElement.querySelectorAll('.reviews-dots__dot');
@@ -1238,9 +1273,8 @@ var pureSlider = function pureSlider(slidesTag, type, style, items, noTouch, hei
                 reviewDots.forEach(function (i) {
                   return i.remove();
                 });
-              }
+              } // createMultipleDots()
 
-              createMultipleDots();
             }
           });
         }
@@ -1318,10 +1352,8 @@ var pureSlider = function pureSlider(slidesTag, type, style, items, noTouch, hei
               dots[viewSlide].classList.add('dot_active');
               slider.style.transform = "translateX(".concat(-viewSlide * viewport, "px)");
             } else {
-              multipleDots.forEach(function (dot) {
-                return dot.classList.remove('active');
-              });
-              multipleDots[viewSlide].classList.add('active');
+              // multipleDots.forEach(dot => dot.classList.remove('active'))
+              // multipleDots[viewSlide].classList.add('active');
               slider.style.transform = "translateX(".concat(-viewSlide * viewport, "px)");
             }
           }
@@ -1368,10 +1400,8 @@ var pureSlider = function pureSlider(slidesTag, type, style, items, noTouch, hei
               dots[viewSlide].classList.add('dot_active');
               slider.style.transform = "translateX(".concat(-viewSlide * viewport, "px)");
             } else {
-              multipleDots.forEach(function (dot) {
-                return dot.classList.remove('active');
-              });
-              multipleDots[viewSlide].classList.add('active');
+              // multipleDots.forEach(dot => dot.classList.remove('active'))
+              // multipleDots[viewSlide].classList.add('active');
               slider.style.transform = "translateX(".concat(-viewSlide * viewport, "px)");
             }
           }
@@ -1449,18 +1479,15 @@ var pureSlider = function pureSlider(slidesTag, type, style, items, noTouch, hei
                   dots[viewSlide].classList.add('dot_active');
                 });
               });
-            } else {
-              multipleDots.forEach(function (dot) {
-                dot.addEventListener('click', function (e) {
-                  var slideTo = e.target.getAttribute('data-slide-to');
-                  viewSlide = slideTo - 1;
-                  slider.style.transform = "translateX(".concat(-viewSlide * viewport, "px)");
-                  multipleDots.forEach(function (dot) {
-                    return dot.classList.remove('active');
-                  });
-                  multipleDots[viewSlide].classList.add('active');
-                });
-              });
+            } else {// multipleDots.forEach(dot => {
+              //     dot.addEventListener('click', (e) => {
+              //         const slideTo = e.target.getAttribute('data-slide-to');
+              //         viewSlide = slideTo - 1;
+              //         slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
+              //         multipleDots.forEach(dot => dot.classList.remove('active'));
+              //         multipleDots[viewSlide].classList.add('active');
+              //     });
+              // });
             }
           };
 
@@ -1822,13 +1849,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/slider */ "./src/js/assets/slider.js");
 /* harmony import */ var _assets_profileView__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/profileView */ "./src/js/assets/profileView.js");
 /* harmony import */ var _assets_popup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/popup */ "./src/js/assets/popup.js");
+/* harmony import */ var _assets_mobileMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/mobileMenu */ "./src/js/assets/mobileMenu.js");
+
 
 
 
 document.addEventListener('DOMContentLoaded', function () {
   Object(_assets_slider__WEBPACK_IMPORTED_MODULE_0__["default"])('.slider__slides', 'dots', 'classic', false, false, false, 5000);
+  Object(_assets_slider__WEBPACK_IMPORTED_MODULE_0__["default"])('.companies__wrapper', 'multiple', 'classic');
   Object(_assets_profileView__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_assets_popup__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_assets_mobileMenu__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 /***/ })

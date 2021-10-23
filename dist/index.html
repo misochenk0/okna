@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.min.css"><link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
   <title>okOkna</title>
 </head><body> 
 <header>
 <div class="header__wrapper"> 
+  <button class="hamburger"> <span> </span><span> </span><span></span></button>
   <div class="header__logo"> <a href="index.html">
        <svg width="234" height="68" viewBox="0 0 234 68" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M153.309 52.0043C152.601 52.0043 152.022 51.7946 151.572 51.375C151.154 50.9232 150.945 50.3423 150.945 49.6324V16.5698C150.945 15.8598 151.154 15.2951 151.572 14.8755C152.022 14.4237 152.601 14.1978 153.309 14.1978C154.016 14.1978 154.579 14.4237 154.997 14.8755C155.447 15.2951 155.672 15.8598 155.672 16.5698V36.2718L167.394 25.7673C167.877 25.3155 168.408 25.1057 168.986 25.138C169.597 25.1703 170.112 25.4284 170.53 25.9125C170.98 26.3966 171.189 26.9291 171.157 27.51C171.125 28.0909 170.868 28.6072 170.385 29.059L161.509 36.9979L170.868 48.519C171.286 49.0353 171.463 49.6001 171.398 50.2133C171.366 50.7942 171.077 51.3105 170.53 51.7623C170.015 52.1818 169.437 52.3593 168.793 52.2948C168.182 52.2625 167.668 51.9882 167.25 51.4719L158.084 40.096L155.672 42.226V49.6324C155.672 50.3423 155.447 50.9232 154.997 51.375C154.579 51.7946 154.016 52.0043 153.309 52.0043Z" fill="#016BB3"/>
@@ -45,6 +49,7 @@
 </defs>
 </svg></a></div>
   <nav class="header__nav">
+    <button class="header-close">✕</button>
     <ul class="header__main"> 
       <li> <a href="index.html">Главная</a></li>
       <li> <a href="categories.html">Продукция</a></li>

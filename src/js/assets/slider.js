@@ -76,7 +76,7 @@ const pureSlider = (slidesTag, type, style, items, noTouch, height, autoPlaytime
                             slider.parentElement.querySelector('.reviews-dots__dot').classList.add('active');
                         }
                     }
-                    createMultipleDots()
+                    // createMultipleDots()
                     
                     window.addEventListener('resize', () => {
                         let dots = slider.parentElement.querySelectorAll('.dot');
@@ -89,7 +89,7 @@ const pureSlider = (slidesTag, type, style, items, noTouch, height, autoPlaytime
                             if(reviewDots) {
                                 reviewDots.forEach(i => i.remove())
                             }
-                            createMultipleDots()
+                            // createMultipleDots()
                         }
     
                     })
@@ -169,8 +169,8 @@ const pureSlider = (slidesTag, type, style, items, noTouch, height, autoPlaytime
                             dots[viewSlide].classList.add('dot_active');
                             slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
                         } else {
-                            multipleDots.forEach(dot => dot.classList.remove('active'))
-                            multipleDots[viewSlide].classList.add('active');
+                            // multipleDots.forEach(dot => dot.classList.remove('active'))
+                            // multipleDots[viewSlide].classList.add('active');
                             slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
                         }
                     }
@@ -208,8 +208,8 @@ const pureSlider = (slidesTag, type, style, items, noTouch, height, autoPlaytime
                             dots[viewSlide].classList.add('dot_active');
                             slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
                         } else {
-                            multipleDots.forEach(dot => dot.classList.remove('active'))
-                            multipleDots[viewSlide].classList.add('active');
+                            // multipleDots.forEach(dot => dot.classList.remove('active'))
+                            // multipleDots[viewSlide].classList.add('active');
                             slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
                         }
                     }
@@ -294,20 +294,20 @@ const pureSlider = (slidesTag, type, style, items, noTouch, height, autoPlaytime
                                 });
                             })
                         } else {
-                            multipleDots.forEach(dot => {
-                                dot.addEventListener('click', (e) => {
-                                    const slideTo = e.target.getAttribute('data-slide-to');
+                            // multipleDots.forEach(dot => {
+                            //     dot.addEventListener('click', (e) => {
+                            //         const slideTo = e.target.getAttribute('data-slide-to');
                     
-                                    viewSlide = slideTo - 1;
-                                    slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
+                            //         viewSlide = slideTo - 1;
+                            //         slider.style.transform = `translateX(${-viewSlide * viewport}px)`;
                     
-                                    multipleDots.forEach(dot => dot.classList.remove('active'));
+                            //         multipleDots.forEach(dot => dot.classList.remove('active'));
                 
-                                    multipleDots[viewSlide].classList.add('active');
+                            //         multipleDots[viewSlide].classList.add('active');
                     
                     
-                                });
-                            });
+                            //     });
+                            // });
                         }
                     }
                     addListener()

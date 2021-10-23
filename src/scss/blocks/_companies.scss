@@ -1,9 +1,12 @@
 .companies {
     margin: 0 60px;
+    &-slider {
+        overflow: hidden;
+    }
     &__wrapper {
         display: flex;
         margin-top: 72px;
-        overflow: hidden;
+        // overflow: hidden;
     }
     position: relative;
     &-img {
